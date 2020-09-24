@@ -1,0 +1,19 @@
+<h1>Qual seu IMC?</h1>
+<label for="peso">
+  PESO:KG
+  <input type="number" name="peso" id="peso" (keyup)="valuePeso($event)" />
+</label>
+
+<label for="altura">
+  Altura:Metros
+  <input
+    type="number"
+    name="altura"
+    id="altura"
+    (keyup)="valueAltura($event)"
+  />
+</label>
+
+<input type="button" value="calcular imc" (click)="calcImc()" />
+
+<p>{{ result }}</p>
